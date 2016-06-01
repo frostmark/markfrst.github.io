@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body{
+  background: #f78181;
+  min-width: 900px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+.main-panel{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 140px;
+  background: #fff;
+  border-left: 5px solid #f3a1a1;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+  display: table;
+}
+
+.main-panel .my-face{
+  margin: 20px;
+  width: 100px;
+  float: left;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.main-panel .my-face img{
+  width: 100px;
+  float: left;
+}
+
+.main-panel .short-about-me{
+  display: table-cell;
+  vertical-align: middle;
+  width: 65%;
+  color: #909090;
+}
+
+
+.main-panel .short-about-me .name{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.main-panel .short-about-me .position{
+  font-weight: 300;
+}
