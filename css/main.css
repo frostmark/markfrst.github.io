@@ -21,6 +21,12 @@ body{
   border-left: 5px solid #f3a1a1;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
   display: table;
+  overflow: hidden;
+
+  -webkit-animation: show-main-panel 1s; /* Safari 4+ */
+  -moz-animation:    show-main-panel 1s; /* Fx 5+ */
+  -o-animation:      show-main-panel 1s; /* Opera 12+ */
+  animation:         show-main-panel 1s; /* IE 10+, Fx 29+ */
 }
 
 .main-panel .my-face{
@@ -40,6 +46,7 @@ body{
   display: table-cell;
   vertical-align: middle;
   width: 65%;
+  min-width: 260px;
   color: #909090;
 }
 
@@ -51,4 +58,45 @@ body{
 
 .main-panel .short-about-me .position{
   font-weight: 300;
+}
+
+@-webkit-keyframes show-main-panel {
+  0%   {
+    opacity: 0;
+    transform: rotate3d(1,0,0,90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate3d(1,0,0,0deg);
+  }
+}
+@-moz-keyframes show-main-panel {
+  0%   {
+    opacity: 0;
+    transform: rotate3d(1,0,0,90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate3d(1,0,0,0deg);
+  }
+}
+@-o-keyframes show-main-panel {
+  0%   {
+    opacity: 0;
+    transform: rotate3d(1,0,0,90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate3d(1,0,0,0deg);
+  }
+}
+@keyframes show-main-panel {
+  0%   {
+    opacity: 0;
+    transform: rotate3d(1,0,0,90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate3d(1,0,0,0deg);
+  }
 }
