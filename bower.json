@@ -1,0 +1,20 @@
+{
+  "name": "frostmark.github.io",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mark Frost <cheerful.mf@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/frostmark/frostmark.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
